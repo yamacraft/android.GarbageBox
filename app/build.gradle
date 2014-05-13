@@ -1,4 +1,13 @@
+def versionMajor = 0
+def versionMinor = 1
+def versionPatch = 0
+def versionBuild = 0
+
 apply plugin: 'android'
+
+repositories {
+    maven { url 'https://raw.github.com/yamacraft/AndEngine/addGradle/repository' }
+}
 
 android {
     compileSdkVersion 19
@@ -7,8 +16,8 @@ android {
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 19
-        versionCode 1
-        versionName "1.0"
+        versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
     }
     buildTypes {
         release {
@@ -16,11 +25,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    sourceSets{
+        main{
+            assets.srcDirs = ['assets']
+        }
+    }
 }
 
 dependencies {
-    compile 'com.android.support:gridlayout-v7:19.0.1'
     compile 'com.android.support:support-v4:19.0.1'
     compile 'com.android.support:appcompat-v7:19.0.1'
+    compile 'com.android.support:gridlayout-v7:19.0.1'
+    compile 'AndEngine:AndEngine-lib:1.0.0'
+    compile 'org.scribe:scribe:1.3.5'
+    compile 'com.jakewharton:butterknife:5.0.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

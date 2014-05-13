@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="dev.yamacraft.garbagebox.app.ui.MainActivity">
+    >
 
-    <fragment android:name="dev.yamacraft.garbagebox.app.ui.MainMenuFragment"
-        android:id="@+id/fragment_main_menu"
+    <fragment
+        android:name="dev.yamacraft.garbagebox.app.ui.ScribeFragment"
+        android:id="@+id/fragment_scribe"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

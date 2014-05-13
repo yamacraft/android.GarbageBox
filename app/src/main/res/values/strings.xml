@@ -10,4 +10,14 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
+    <string name="main_menu_scribe">Scribe(OAuth Library)</string>
+    <string name="main_menu_navigation_drawer">Navigation Drawer</string>
+    <string name="main_menu_andengine">AndEngine</string>
+    <string name="main_menu_intent">Intent Check</string>
+    <string-array name="main_menu" >
+        <item>@string/main_menu_intent</item>
+        <item>@string/main_menu_scribe</item>
+        <item>@string/main_menu_navigation_drawer</item>
+        <item>@string/main_menu_andengine</item>
+    </string-array>
 </resources>

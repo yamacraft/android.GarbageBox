@@ -1,4 +1,4 @@
-package dev.yamacraft.garbagebox.app;
+package dev.yamacraft.garbagebox.app.ui;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import dev.yamacraft.garbagebox.app.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
